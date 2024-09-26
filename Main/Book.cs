@@ -8,15 +8,6 @@ namespace Main
 {
     public class Book
     {
-        private string _title;
-        private string _author;
-        private string _isbn;
-        private bool _availibilty;
-        public string Title => _title;
-        public string Author => _author;
-        public string ISBN => _isbn;
-        public bool Availability { get; set; }
-
         public Book(string title, string author, string isbn)
         {
             _title = title;
@@ -24,5 +15,13 @@ namespace Main
             _isbn = isbn;
             Availability = true;
         }
+
+        private string _title;
+        private string _author;
+        private string _isbn;
+        public string Title => _title;
+        public string Author => _author;
+        public string ISBN => _isbn;
+        public bool Availability { get; set; }       
     }
 }

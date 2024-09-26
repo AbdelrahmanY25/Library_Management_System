@@ -8,35 +8,24 @@ namespace Main
 {
     public class Library
     {
-        public Library(List<Book> books = null)
+        public delegate string BorrowAndReturnBooks(string search);
+        public List<Book> Books { get; set; } = new List<Book>();
+
+        public string this[int book]
         {
-            Books = new List<Book>();
+            get
+            {
+                return $"Book Title: {Books[book].Title}, Book Author: {Books[book].Author}";
+            }
         }
-
-        public List<Book> Books { get; set; }
-
         public string AddBook(Book book)
         {
             Books.Add(book);
             return $"Book added: {book.Title} by {book.Author} With ISBN : {book.ISBN}";
         }
-
-        //public Book SearchBook(string search)
-        //{
-        //    foreach (var book in Books)
-        //    {
-        //        if (book.Title.Contains(search) || book.Author.Contains(search))
-        //        {
-        //            return book;
-        //        }
-        //    }
-        //    return null;
-        //}
-
         public string BorrowBook(string search)
         {
-            //Book book = SearchBook(search);
-            Book book = Books.Find((e) => e.Title.Contains(search) || e.Author.Contains(search));
+            Book? book = Books.Find((e) => e.Title.Contains(search) || e.Author.Contains(search));
 
             if (book != null && book.Availability)
             {
@@ -54,8 +43,7 @@ namespace Main
         }
         public string ReturnBook(string search)
         {
-            //Book books = SearchBook(search);
-            Book book = Books.Find((e) => e.Title.Contains(search) || e.Author.Contains(search));
+            Book? book = Books.Find((e) => e.Title.Contains(search) || e.Author.Contains(search));
 
             if (book != null && !book.Availability)
             {
