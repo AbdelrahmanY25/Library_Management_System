@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Main
+﻿namespace Main
 {
     public class Book
     {
@@ -16,9 +10,9 @@ namespace Main
             Availability = true;
         }
 
-        private string _title;
-        private string _author;
-        private string _isbn;
+        private readonly string _title;
+        private readonly string _author;
+        private readonly string _isbn;
         public string Title => _title;
         public string Author => _author;
         public string ISBN => _isbn;

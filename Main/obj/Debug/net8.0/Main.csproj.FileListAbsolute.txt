@@ -27,3 +27,18 @@ D:\My_Projects\Back End C# Asp .Net\Eraasoft Lec\D05 Eraasoft .Net 506\Intro To 
 D:\My_Projects\Back End C# Asp .Net\Eraasoft Lec\D05 Eraasoft .Net 506\Intro To OOP\Assi_4\Main\Library_Mangement_System\Main\obj\Debug\net8.0\Main.pdb
 D:\My_Projects\Back End C# Asp .Net\Eraasoft Lec\D05 Eraasoft .Net 506\Intro To OOP\Assi_4\Main\Library_Mangement_System\Main\obj\Debug\net8.0\Main.genruntimeconfig.cache
 D:\My_Projects\Back End C# Asp .Net\Eraasoft Lec\D05 Eraasoft .Net 506\Intro To OOP\Assi_4\Main\Library_Mangement_System\Main\obj\Debug\net8.0\ref\Main.dll
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\bin\Debug\net8.0\Main.exe
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\bin\Debug\net8.0\Main.deps.json
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\bin\Debug\net8.0\Main.runtimeconfig.json
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\bin\Debug\net8.0\Main.dll
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\bin\Debug\net8.0\Main.pdb
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\Main.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\Main.AssemblyInfoInputs.cache
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\Main.AssemblyInfo.cs
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\Main.csproj.CoreCompileInputs.cache
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\Main.sourcelink.json
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\Main.dll
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\refint\Main.dll
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\Main.pdb
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\Main.genruntimeconfig.cache
+D:\My_Projects\Back End C# Asp .Net\Projects On C#\Library_Management_System_1\Main\obj\Debug\net8.0\ref\Main.dll

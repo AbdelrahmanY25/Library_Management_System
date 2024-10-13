@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My_Projects\\Back End C# Asp .Net\\Eraasoft Lec\\D05 Eraasoft .Net 506\\Intro To OOP\\Assi_4\\Main\\Library_Mangement_System\\Main\\Main.csproj": {}
+    "D:\\My_Projects\\Back End C# Asp .Net\\Projects On C#\\Library_Management_System\\Main\\Main.csproj": {}
   },
   "projects": {
-    "D:\\My_Projects\\Back End C# Asp .Net\\Eraasoft Lec\\D05 Eraasoft .Net 506\\Intro To OOP\\Assi_4\\Main\\Library_Mangement_System\\Main\\Main.csproj": {
+    "D:\\My_Projects\\Back End C# Asp .Net\\Projects On C#\\Library_Management_System\\Main\\Main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My_Projects\\Back End C# Asp .Net\\Eraasoft Lec\\D05 Eraasoft .Net 506\\Intro To OOP\\Assi_4\\Main\\Library_Mangement_System\\Main\\Main.csproj",
+        "projectUniqueName": "D:\\My_Projects\\Back End C# Asp .Net\\Projects On C#\\Library_Management_System\\Main\\Main.csproj",
         "projectName": "Main",
-        "projectPath": "D:\\My_Projects\\Back End C# Asp .Net\\Eraasoft Lec\\D05 Eraasoft .Net 506\\Intro To OOP\\Assi_4\\Main\\Library_Mangement_System\\Main\\Main.csproj",
+        "projectPath": "D:\\My_Projects\\Back End C# Asp .Net\\Projects On C#\\Library_Management_System\\Main\\Main.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\My_Projects\\Back End C# Asp .Net\\Eraasoft Lec\\D05 Eraasoft .Net 506\\Intro To OOP\\Assi_4\\Main\\Library_Mangement_System\\Main\\obj\\",
+        "outputPath": "D:\\My_Projects\\Back End C# Asp .Net\\Projects On C#\\Library_Management_System\\Main\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

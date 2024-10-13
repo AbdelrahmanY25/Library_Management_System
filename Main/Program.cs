@@ -7,36 +7,74 @@ namespace Main
         static void Main(string[] args)
         {
             Library library = new Library();
-            BorrowAndReturnBooks ToBoorowBook = library.BorrowBook;
-            BorrowAndReturnBooks ToReturnBook = library.ReturnBook;
 
-            // Adding books to the library
             Console.WriteLine("======================== To Add Book ============================\n");
 
-            Console.WriteLine(library.AddBook(new Book("The Great Gatsby", "F. Scott Fitzgerald", "9780743273565")));
-            Console.WriteLine(library.AddBook(new Book("To Kill a Mockingbird", "Harper Lee", "9780061120084")));
-            Console.WriteLine(library.AddBook(new Book("1984", "George Orwell", "9780451524935")));
+            library.BooksAdded += Library_BooksAdded;
+
+            library.AddBook(new Book("The Great Gatsby", "F. Scott Fitzgerald", "9780743273565"));
+            library.AddBook(new Book("To Kill a Mockingbird", "Harper Lee", "9780061120084"));
+            library.AddBook(new Book("1984", "George Orwell", "9780451524935"));
 
             Console.WriteLine("\n======================== Select Book By Index ============================\n");
 
             Console.WriteLine(library[2]);
+            Console.WriteLine(library["198"]);
 
-            // Searching and borrowing books
             Console.WriteLine("\n======================== To Borrow Book ============================\n");
 
-            Console.WriteLine("Searching and borrowing books...");            
-            Console.WriteLine(ToBoorowBook("Gatsby"));
-            Console.WriteLine(ToBoorowBook("1984"));
-            Console.WriteLine(ToBoorowBook("Harry Potter")); // This book is not in the library
+            library.BooksBorrowedAndReturned += Library_BooksBorrowed;
 
-            // Returning books
+            library.FindBook("Gatsby");
+            library.FindBook("1984");
+            library.FindBook("Harry Potter"); // Sorry We Don't Have This Book In Our Library...
+
             Console.WriteLine("\n======================== To Return Book ============================");
 
-            Console.WriteLine("\nReturning books...");
-            Console.WriteLine(ToReturnBook.Invoke("Gatsby"));
-            Console.WriteLine(ToReturnBook.Invoke("Harry Potter")); // This book is not borrowed
+            library.BooksBorrowedAndReturned -= Library_BooksBorrowed;
+            library.BooksBorrowedAndReturned += Library_BooksReturned1;
+            
+            library.FindBook("Gatsby");
+            library.FindBook("Harry Potter"); // Sorry We Don't Have This Book In Our Library...
 
             Console.ReadLine();
+        }
+
+        private static void Library_BooksReturned1(Book book, string search)
+        {
+            if (book != null && !book.Availability)
+            {                
+                book.Availability = true;
+                Console.WriteLine($"Thank You For Returned \"{book.Title}\" Book");
+            }            
+            else
+            {
+                Console.WriteLine("Sorry We Don't Have This Book In Our Library...");
+            }
+        }
+        private static void Library_BooksBorrowed(Book book, string search)
+        {
+            if (book != null)
+            {
+                if (book.Availability)
+                {
+                    book.Availability = false;
+                    Console.WriteLine($"Ok You Can Borrow: \"{book.Title}\" Book...");
+                }
+                else
+                {
+                    Console.WriteLine($"Sorry The \"{book.Title}\" Book Already Borrowed...");
+                }                
+            }
+            else
+            {
+                Console.WriteLine("Sorry We Don't Have This Book In Our Library...");
+            }
+
+        }
+        private static void Library_BooksAdded(Book book)
+        {
+            Console.WriteLine($"Book added: {book.Title} by {book.Author} With ISBN : {book.ISBN}");
         }
     }
 }
